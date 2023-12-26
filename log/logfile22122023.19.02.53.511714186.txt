@@ -1,0 +1,43 @@
+2023/12/22 19:02:53 Server Started (+)
+2023/12/22 19:03:01 ContactForm (+)
+2023/12/22 19:03:01 processLoopData
+2023/12/22 19:03:01 data map[atrk1:button_text atrk2:color_variation atrt1:string atrt2:string atrv1:Free trial atrv2:ESK0023 et:clicked ev:top_cta_clicked id:cl_app_id_001 l:en-US mid:cl_app_id_001-uid-001 p:http://shielded-eyrie-45679.herokuapp.com/contact-us sc:1920 x 1080 t:Vegefoods - Free Bootstrap 4 Template by Colorlib uatrk1:user_score uatrk2:gender uatrk3:tracking_code uatrt1:number uatrt2:string uatrt3:string uatrv1:1034 uatrv2:m uatrv3:POSERK093 uid:cl_app_id_001-uid-001]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 atr map[]
+2023/12/22 19:03:01 http: panic serving [::1]:44136: assignment to entry in nil map
+goroutine 18 [running]:
+net/http.(*conn).serve.func1()
+	/usr/local/go/src/net/http/server.go:1825 +0xbf
+panic({0x661e40, 0x714db0})
+	/usr/local/go/src/runtime/panic.go:844 +0x258
+trial/Message.processLoopData({0x660700?, 0xc00010a090})
+	/home/dev-205/Documents/Training Projects/golang/Trial/Message/NewFile.go:99 +0x466
+trial/Message.NewForm({0x717698, 0xc00011c000}, 0xc00019a100)
+	/home/dev-205/Documents/Training Projects/golang/Trial/Message/NewFile.go:47 +0x48a
+net/http.HandlerFunc.ServeHTTP(0x654640?, {0x717698?, 0xc00011c000?}, 0xc000108070?)
+	/usr/local/go/src/net/http/server.go:2084 +0x2f
+net/http.(*ServeMux).ServeHTTP(0x0?, {0x717698, 0xc00011c000}, 0xc00019a100)
+	/usr/local/go/src/net/http/server.go:2462 +0x149
+net/http.serverHandler.ServeHTTP({0x7169a8?}, {0x717698, 0xc00011c000}, 0xc00019a100)
+	/usr/local/go/src/net/http/server.go:2916 +0x43b
+net/http.(*conn).serve(0xc0001a2000, {0x717890, 0xc00008ae10})
+	/usr/local/go/src/net/http/server.go:1966 +0x5d7
+created by net/http.(*Server).Serve
+	/usr/local/go/src/net/http/server.go:3071 +0x4db
