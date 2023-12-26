@@ -10,7 +10,7 @@ import (
 // func TelegramApi() {
 // 	log.Println("TelegramApi(+)")
 // 	// Replace with your bot token
-// 	bot, err := tgbotapi.NewBotAPI("6178504153:AAGhq_LfIMd_YPQq2r3nBBVbKK5PmQ2ZNwI")
+// 	bot, err := tgbotapi.NewBotAPI("Your:Token")
 // 	if err != nil {
 // 		log.Panic(err)
 // 	}
