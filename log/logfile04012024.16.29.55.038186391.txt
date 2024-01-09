@@ -1,0 +1,3 @@
+2024/01/04 16:29:55 Server Started (+)
+2024/01/04 16:29:57 535 5.7.8 Username and Password not accepted. For more information, go to
+5.7.8  https://support.google.com/mail/?p=BadCredentials n6-20020a170902d2c600b001d49e742d51sm10937872plc.30 - gsmtp

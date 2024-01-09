@@ -1,0 +1,8 @@
+2024/01/08 19:12:28 Server Started (+)
+2024/01/08 19:12:29 Connected
+2024/01/08 19:12:30 Logged in
+2024/01/08 19:12:32 Date: 2024-01-08 16:12:18 +0530 IST
+2024/01/08 19:12:32 From: ["Karthik Raja K" <karthikraja.k@fcsonline.co.in>]
+2024/01/08 19:12:32 Subject: Fwd: RBI Retail Direct - Auction Announcement Notification
+2024/01/08 19:12:32 Error reading HTML part: EOF
+2024/01/08 19:12:32 EOF

@@ -3,11 +3,9 @@ package main
 import (
 	"fmt"
 	"log"
-	"net/http"
 	"os"
 	"os/exec"
 	"time"
-	message "trial/Message"
 
 	"github.com/skip2/go-qrcode"
 	// "strings"
@@ -64,37 +62,10 @@ func main() {
 	go autoRestart()
 	log.Println("Server Started (+)")
 	// Run()
-
 	// http.HandleFunc("/Handle", LinkConverter.FlattradeAppRequest)
-	http.HandleFunc("/message", message.ContactForm)
-	http.ListenAndServe(":29094", nil)
+	// newemailpackage.SendMail()
 
 }
-
-// HTTP()
-
-// func Run() {
-// 	log.Println("Run(+)")
-// 	log.Println("server started")
-// ip, err := ipaddress.GetLocalIP()
-// if err != nil {
-// 	fmt.Println("Error:", err)
-// 	return
-// }
-
-// fmt.Println("Local IP Address:", ip)
-
-// Rect()
-// crypto.BlockChain()
-// Telegram.TelegramApi()
-// OTP.Otp()
-// OTP.Qrcode()
-// http.HandleFunc("/Handle", handleRequest)
-// http.HandleFunc("/Handle", handleRequest)
-// http.HandleFunc("/Auth", Authentication.GoogleCallbackHandler)
-// Qrcode("https://novoapi.flattrade.in/Handle")
-// 	log.Println("Run(-)")
-// }
 
 func Qrcode(url string) {
 

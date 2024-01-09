@@ -1,7 +1,6 @@
 package Telegram
 
 import (
-	"fmt"
 	"log"
 
 	tgbotapi "github.com/go-telegram-bot-api/telegram-bot-api"
@@ -62,21 +61,26 @@ func TelegramApi() {
 	if err != nil {
 		log.Panic(err)
 	}
-	fmt.Println("bot", bot)
 	bot.Debug = true // Enable debugging
 
-	log.Printf("Authorized as %s", bot.Self.UserName)
+	// log.Printf("Authorized as %s", bot.Self.UserName)
 
 	// Create a new message
+	//  Working Messaging in Telegram
+	// msg := tgbotapi.NewMessage(901927564, "Hello, Prashanth!")
+	// // Send the message
+	// _, err = bot.Send(msg)
+	// if err != nil {
+	// 	log.Panic(err)
+	// }
 
-	msg := tgbotapi.NewMessage(919025030926, "Hello, Telegram!")
-
+	msg := tgbotapi.NewMessageToChannel("GolangDeveloper", "Hello, Prashanth!")
 	// Send the message
 	_, err = bot.Send(msg)
 	if err != nil {
 		log.Panic(err)
 	}
-
+	log.Println("msg", msg)
 	updates, err := bot.GetUpdates(tgbotapi.NewUpdate(0))
 	if err != nil {
 		log.Panic(err)
